@@ -1,7 +1,6 @@
 use bevy::prelude::*;
 use scene_editor::SceneEditor;
 
-mod first_person_camera;
 mod scene_editor;
 
 

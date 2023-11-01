@@ -1,13 +1,12 @@
 use bevy::prelude::*;
 use super::{SceneEditor, SelectedEntity};
 use bevy_rapier3d::prelude::*;
-
-use crate::first_person_camera;
+use super::first_person_camera::*;
 
 impl Plugin for SceneEditor{
     fn build(&self, app: &mut App){
         app.add_plugins((
-            first_person_camera::FirstPersonCamera,
+            FirstPersonCamera,
             RapierPhysicsPlugin::<NoUserData>::default(),
             RapierDebugRenderPlugin::default()
         ))
